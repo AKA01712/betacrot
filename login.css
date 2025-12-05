@@ -1,0 +1,174 @@
+/* --- Global Styling --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333; /* Background gelap di luar kotak */
+}
+
+.container {
+    padding: 40px;
+}
+
+.login-box {
+    /* UBAH: Tambahkan lebar kotak login dari 340px menjadi 400px */
+    width: 500px; 
+    padding: 40px 30px;
+    background-color: #808080; /* Warna abu-abu tengah */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* --- Header & Teks --- */
+.back-icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: black;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.link-signup {
+    color: #ff9900; /* Warna oranye untuk link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot-password {
+    display: block;
+    color: white;
+    text-align: right;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: -15px; 
+    margin-bottom: 30px;
+}
+
+/* --- Input Group Styling (Garis Bawah) --- */
+.input-group {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+/* Mengatur label agar terlihat seperti placeholder */
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* Animasi label ketika input diisi atau sedang fokus */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #ff9900;
+}
+
+
+/* --- Tombol Utama --- */
+.btn-primary {
+    width: 100%;
+    background-color: #ff9900;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #e68a00;
+}
+
+
+/* --- Social Login Divider --- */
+.social-login-divider {
+    position: relative;
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+.divider-line {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    margin: 0;
+}
+
+.divider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #808080; /* Warna abu-abu background */
+    color: white;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/* --- Social Icons --- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon-fb {
+    background-color: #3b5998; /* Warna Facebook */
+}
+
+.icon-google {
+    background-color: #db4437; /* Warna Google */
+}

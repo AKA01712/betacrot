@@ -1,0 +1,474 @@
+/* --- Global Styling (opsional, untuk tampilan keseluruhan) --- */
+/* Menghilangkan margin/padding bawaan pada body untuk membuat elemen sejajar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3e8cc; /* Warna Orange Kaki untuk latar belakang luar */
+}
+
+/* Container utama untuk bagian 'produk' dan area navigasi */
+.main-content {
+    background-color: #f3e8cc; /* Warna krem/beige di bawah navbar */
+    padding-top: 50px; /* Jarak agar konten tidak terlalu menempel dengan tepi atas */
+}
+
+/* --- Navbar Styling (Tidak diubah dari yang Anda berikan, kecuali warna body) --- */
+
+.navbar {
+    /* Menghilangkan background linear-gradient pada navbar utama untuk mengikuti gambar (hanya menu yang berlatar belakang) */
+    background: none;
+    padding: 25px 0 0; /* Memberi ruang di atas nav-container */
+    display: flex;
+    justify-content: center;
+}
+
+/* Kontainer utama */
+.nav-container {
+    width: 85%; /* Menyesuaikan lebar dengan gambar */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* Menambahkan latar belakang terang untuk area nav-container agar cocok dengan gambar */
+    background-color: #f3e8cc;
+    border-radius: 10px 10px 0 0;
+    padding-left: 20px; /* Sedikit padding agar logo tidak terlalu mepet */
+}
+
+/* Logo */
+.logo {
+    /* Memastikan logo berada di luar menu kapsul */
+    margin-left: -20px; /* Menggeser logo kembali agar berada di kiri luar */
+}
+
+.logo img {
+    height: 69px;
+    /* Menambahkan margin-top agar logo berada sedikit di bawah (sesuai gambar) */
+    margin-top: 15px;
+}
+
+/* Capsule menu */
+.menu {
+    /* Mengatur ulang background dan shadow */
+    background: linear-gradient(white, #fff7e3);
+    padding: 12px 40px;
+    border-radius: 40px;
+    display: flex;
+    gap: 50px;
+    flex-grow: 1;
+    justify-content: center;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); /* Bayangan sedikit lebih gelap */
+    /* Menyesuaikan posisi vertikal menu */
+    margin-top: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #c38300;
+}
+
+/* Bagian Ikon (Pengganti Tombol Login) */
+.nav-icons {
+    /* Latar belakang untuk area ikon */
+    background: linear-gradient(to right, #deac70, #c38300);
+    padding: 8px 10px;
+    border-radius: 35px;
+    display: flex;
+    gap: 15px;
+    margin-right: 15px; /* Jarak dari tepi kanan */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    /* Menyesuaikan posisi vertikal agar sejajar dengan menu */
+    margin-top: 10px;
+}
+
+.icon-wrapper {
+    background-color: #333; /* Warna gelap untuk latar belakang ikon */
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+    /* Tambahan untuk tag <a> agar terlihat seperti DIV biasa */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+.icon-wrapper:hover {
+    background-color: #111;
+}
+
+/* Styling Khusus untuk Ikon Keranjang (Tidak ada perubahan di sini) */
+.cart-icon {
+    position: relative;
+    background-color: #c38300; 
+}
+/* Angka notifikasi keranjang (misalnya '1') */
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px 5px;
+    line-height: 1;
+}
+
+/* --- Wrapper Konten Utama (Untuk Latar Belakang Krem) --- */
+.main-content-wrapper {
+    /* Anggap wrapper ini membungkus semua konten di bawah header */
+    width: 85%; /* Menyesuaikan dengan lebar nav-container */
+    margin: 0 auto;
+    background-color: #f3e8cc; /* Latar belakang krem/beige */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* --- Styling Pencarian (Search Bar) --- */
+.search-section {
+    display: flex;
+    justify-content: flex-end; /* Memindahkan search bar ke kanan */
+    padding-right: 15px; /* Jarak dari tepi kanan nav-container */
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    width: 400px; /* Sesuaikan lebar search bar */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.location-icon {
+    font-size: 18px;
+    color: #555;
+    padding-left: 15px;
+}
+
+.btn-explore {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 5px;
+    text-transform: lowercase; /* Teks 'eksplor' huruf kecil */
+}
+
+.btn-explore:hover {
+    background-color: #45a049;
+}
+
+
+/* --- Styling Banner Carousel Produk --- */
+.product-banner-carousel {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px; /* Padding agar tidak terlalu mepet tepi */
+}
+
+.carousel-container {
+    width: 95%;
+    background-color: #fcece0; /* Latar belakang slide (warna roti) */
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* Penting untuk tombol navigasi */
+    overflow: hidden; /* Menyembunyikan konten yang keluar batas */
+    padding: 15px;
+}
+
+.carousel-image-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px; /* Tinggi yang cukup besar untuk gambar */
+}
+
+.carousel-image-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.2s;
+}
+
+.carousel-nav-btn:hover {
+    background: white;
+    color: #c38300;
+}
+
+.left-arrow {
+    left: 25px;
+}
+
+.right-arrow {
+    right: 25px;
+}
+
+/* --- Styling Teks Ajakan (Call-to-Action) --- */
+.cta-text {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+/* ======================================= */
+/* --- Styling Bagian Menu dan Produk --- */
+/* ======================================= */
+
+.product-grid-section {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* --- Menu Sidebar Kiri --- */
+.sidebar-menu {
+    width: 250px;
+    background: linear-gradient(to bottom, #ff9900, #ffcc33); /* Gradien Oranye */
+    border-radius: 10px;
+    padding: 15px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Sesuai dengan kontennya */
+}
+
+.menu-title {
+    color: white;
+    text-align: center;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu-item {
+    color: #333;
+    padding: 12px 20px;
+    margin: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    background-color: white;
+}
+
+.menu-item.active {
+    background-color: white;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+.menu-item i:first-child {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+
+/* --- Product List Container Kanan --- */
+.product-list-container {
+    flex-grow: 1;
+    background-color: #fcf6e4; /* Warna krem yang lebih terang untuk background produk */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-list-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.product-search-bar {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 200px;
+    font-size: 14px;
+    padding-right: 35px; /* Ruang untuk ikon */
+}
+
+.product-search-icon {
+    position: absolute;
+    right: 10px;
+    color: #888;
+    font-size: 16px;
+}
+
+/* --- Product Grid --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    gap: 15px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100px; /* Ukuran gambar produk */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 3px solid #fcece0;
+}
+
+.product-card h4 {
+    margin: 5px 0;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: #333;
+}
+
+.product-card .price-old {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.85em;
+    margin: 0;
+}
+
+.product-card .price-new {
+    color: #ff5500; /* Harga baru yang lebih menonjol */
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: 2px 0 8px 0;
+}
+
+.btn-pesan {
+    background-color: #ff9900; /* Oranye untuk tombol pesan */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 0.9em;
+}
+
+.btn-pesan:hover {
+    background-color: #cc7a00;
+}
+
+/* ======================================= */
+/* --- Styling Footer --- */
+/* ======================================= */
+.main-footer {
+    background-color: #ea974e; /* Warna Orange Kaki */
+    color: white;
+    padding: 20px 0 5px 0;
+    margin-top: 150px;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.footer-logo img {
+    height: 65px; /* Ukuran logo di footer */
+    /* Filter untuk membuat logo menjadi putih atau sesuai warna footer */
+    /* filter: brightness(0) invert(1);  */
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-search input[type="text"] {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 180px;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}

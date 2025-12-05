@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-box">
+            <a href="index.html" class="back-icon"><i class="fa-solid fa-arrow-left fa-xl"></i></a>
+
+             <h1 class="title">Login</h1>
+            <p class="subtitle">
+                 Belum punya akun? <a href="#" class="link-signup">Sign Up</a>
+             </p>
+
+            <form action="user.html" method="GET"> 
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>  
+             <a href="#" class="forgot-password">Lupa Password?</a>
+
+                        <button type="submit" class="btn-primary">Login</button>
+
+            </form>
+            <div class="social-login-divider">
+                <hr class="divider-line">
+                <span class="divider-text">Atau login dengan</span>
+            </div>
+             <div class="social-icons">
+                 <a href="#" class="icon-fb"><i class="fa-brands fa-facebook-f"></i></a>
+                 <a href="#" class="icon-google"><i class="fa-brands fa-google"></i></a>
+             </div>
+         </div>
+    </div>
+</body>
+
+</html>

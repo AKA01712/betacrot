@@ -1,0 +1,296 @@
+/* --- Global Styling --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Mengubah warna body luar menjadi sedikit lebih gelap untuk memisahkan dari konten utama */
+    background-color: #f7f1e6; 
+}
+
+/* --- Navbar Styling (Dipertahankan seperti sebelumnya) --- */
+
+.navbar {
+    background: none;
+    padding: 25px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #f7f1e6; /* Latar belakang navbar disamakan dengan body */
+    border-radius: 10px 10px 0 0;
+    padding-left: 20px;
+}
+
+.logo {
+    margin-left: -20px;
+}
+
+.logo img {
+    height: 69px;
+    margin-top: 15px;
+}
+
+.menu {
+    background: linear-gradient(white, #fff7e3);
+    padding: 12px 40px;
+    border-radius: 40px;
+    display: flex;
+    gap: 50px;
+    flex-grow: 1;
+    justify-content: center;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #c38300;
+}
+
+.nav-icons {
+    background: linear-gradient(to right, #deac70, #c38300);
+    padding: 8px 10px;
+    border-radius: 35px;
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.icon-wrapper {
+    background-color: #333;
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.icon-wrapper {
+    background-color: #333; /* Warna gelap untuk latar belakang ikon */
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+    /* Tambahan untuk tag <a> agar terlihat seperti DIV biasa */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+.icon-wrapper:hover {
+    background-color: #111;
+}
+
+/* Styling Khusus untuk Ikon Keranjang (Tidak ada perubahan di sini) */
+.cart-icon {
+    position: relative;
+    background-color: #c38300; 
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px 5px;
+    line-height: 1;
+}
+
+/* --- Wrapper Konten Utama --- */
+.main-content-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #f7f1e6; /* Latar belakang krem/beige yang cerah */
+    padding-top: 0; /* Menghilangkan padding atas agar menyambung dengan navbar */
+    padding-bottom: 50px;
+}
+
+/* --- Hero Section Styling (Tentang Roti Beta) --- */
+.img-foto {
+   background-image: url(resized_roti.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 750px;
+
+    margin: 24px auto;          /* Membuat container di TENGAH */
+    border-radius: 16px;
+    padding: 0 170px;            /* Jarak kiri + kanan */
+    max-width: 1300px;          /* Batas lebar supaya tidak mepet layar */
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Gradien gelap di bagian bawah-kiri untuk teks (sesuai gambar) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px 40px;
+    color: white;
+}
+
+.hero-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 340px;
+}
+
+/* --- Visi dan Misi Section Styling --- */
+.vision-mission-container {
+    display: flex;
+    gap: 30px;
+    padding: 0 40px; /* Padding sisi agar tidak terlalu mepet */
+}
+
+.vision-box, .mission-box {
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff; /* Warna putih untuk box Visi Misi */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.vision-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.mission-box .mission-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mission-box .mission-list li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    /* Menambahkan tanda dash/strip di awal (sesuai gambar) */
+    text-indent: -1em; 
+    padding-left: 1em;
+}
+
+/* Opsional: Jika ingin mengganti list-style menjadi dash manual */
+.mission-box .mission-list li:before {
+    content: "-- "; /* Hanya teks jika tidak ingin menggunakan ikon */
+    font-weight: bold;
+    color: #c38300;
+}
+
+
+/* ======================================= */
+/* --- Hapus Styling Produk dan Carousel Lama --- */
+/* ======================================= */
+
+/* Hapus elemen yang tidak digunakan lagi: */
+.search-section, .product-banner-carousel, .cta-text, .product-grid-section {
+    display: none;
+}
+
+
+/* ======================================= */
+/* --- Styling Footer (Disesuaikan) --- */
+/* ======================================= */
+.main-footer {
+    background-color: #ea974e; /* Warna Orange Kaki */
+    color: white;
+    padding: 20px 0 5px 0;
+    /* Mengubah margin-top agar tidak terlalu jauh dari konten */
+    margin-top: 50px; 
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    /* Mengubah warna border agar lebih terlihat di atas latar belakang oranye */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+}
+
+.footer-logo img {
+    height: 65px; /* Ukuran logo di footer (Disamakan dengan gambar image_dfac48.png) */
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: text-decoration 0.2s;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.btn-check-index {
+    /* Menjadikan tombol seperti di gambar image_dfac48.png */
+    background-color: white;
+    color: #c38300; /* Warna teks oranye */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}

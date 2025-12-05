@@ -1,0 +1,190 @@
+/* --- Profil Layout --- */
+
+/* Menggunakan .main-content-wrapper dari CSS umum untuk sticky footer */
+.main-content-wrapper {
+    /* Pastikan flex-grow: 1 sudah ada di CSS umum Anda */
+    padding: 40px 0;
+}
+
+.page-title {
+    width: 85%;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+    color: #333;
+}
+
+.profile-layout {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Sidebar Styling --- */
+.profile-sidebar {
+    width: 250px;
+    min-width: 250px;
+    background-color: #fcf6e4; /* Warna krem/beige muda */
+    border-radius: 8px;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.user-info-card {
+    text-align: center;
+    padding: 10px 0 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.avatar-container {
+    color: #c38300; /* Warna ikon user */
+    margin-bottom: 10px;
+}
+
+.user-name {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.user-email {
+    margin: 2px 0 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.profile-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #555;
+    padding: 12px 20px;
+    margin: 2px 0;
+    font-size: 1em;
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f0;
+    color: #c38300;
+}
+
+.menu-item.active {
+    background-color: #ffcc66; /* Oranye muda */
+    color: #333;
+    font-weight: bold;
+    border-left: 5px solid #c38300;
+}
+
+.menu-item.logout {
+    margin-top: 20px;
+    color: #dc3545; /* Merah untuk logout */
+}
+
+.menu-item.logout:hover {
+    background-color: #ffe8e8;
+    color: #dc3545;
+}
+
+
+/* --- Profile Content Styling --- */
+.profile-content {
+    flex-grow: 1;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.content-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.btn-edit {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-edit:hover {
+    background-color: #e68a00;
+}
+
+.profile-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.detail-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.detail-group p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+    padding: 5px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.address-box {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address-text {
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+    max-width: 70%;
+}
+
+.btn-change-address {
+    color: #c38300;
+    text-decoration: none;
+    font-weight: bold;
+}

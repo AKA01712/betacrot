@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <!-- Link Font Awesome untuk ikon-ikon yang digunakan -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="produk.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- Asumsi file salin.png ada di folder yang sama -->
+                <img src="salin.png" alt="Logo Roti Beta">
+            </div>
+
+            <nav class="menu">
+                <a href="user.html">Home</a>
+                <a href="produk.html">Produk</a>
+                <a href="tentang.html">Tentang kami</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="notif.html" class="icon-wrapper">
+                    <i class="fas fa-bell"></i>
+                </a>
+
+                <a href="keranjang.html" class="icon-wrapper cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">1</span>
+                </a>
+            </div>
+            <div class="nav-icons">
+                <a href="user profile.html" class="icon-wrapper cart-icon">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+            <div class="nav-icons">
+                <a href="index.html" class="icon-wrapper cart-icon">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content-wrapper">
+        <!-- Search Section (Sudah ada, tidak diubah) -->
+        <div class="search-section">
+            <div class="search-bar">
+                <i class="fas fa-map-marker-alt location-icon"></i>
+                <input type="text" placeholder="Cari lokasi atau produk...">
+                <button class="btn-explore">eksplor</button>
+            </div>
+        </div>
+
+        <!-- Banner Carousel (Sudah ada, ditambah gambar placeholder) -->
+        <div class="product-banner-carousel">
+            <div class="carousel-container">
+                <button class="carousel-nav-btn left-arrow">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+                <div class="carousel-image-slide">
+                    <!-- Placeholder untuk gambar roti tawar/gandum di carousel -->
+                    <img src="roti tawar.jpg" alt="Roti Tawar Spesial">
+                </div>
+
+                <button class="carousel-nav-btn right-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <h2 class="cta-text">Order your Roti Beta now !</h2>
+
+        <!-- Start: BAGIAN MENU DAN PRODUK BARU -->
+        <div class="product-grid-section">
+
+            <!-- 1. Menu Pilihan di Sisi Kiri -->
+            <div class="sidebar-menu">
+                <h3 class="menu-title">Pilihan Menu</h3>
+
+                <div class="menu-item active">
+                    Semua Menu <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-bread-slice"></i> Roti Keju <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-cookie-bite"></i> Roti Kukus <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-utensils"></i> Roti Tawar <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-cookie"></i> Roti Coklat <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <!-- 2. Daftar Produk (Main Content) -->
+            <div class="product-list-container">
+                <div class="product-list-header">
+                    <input type="text" placeholder="Cari menu" class="product-search-bar">
+                    <i class="fas fa-search product-search-icon"></i>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Template Item Produk -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Keju" alt="Roti Isi Keju">
+                        <h4>Roti Isi Keju</h4>
+                        <p class="price-old">RP 15.000</p>
+                        <p class="price-new">RP 13.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Tawar" alt="Roti Tawar">
+                        <h4>Roti Tawar</h4>
+                        <p class="price-old">RP 12.000</p>
+                        <p class="price-new">RP 10.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Coklat" alt="Roti Manis Coklat">
+                        <h4>Roti Manis Coklat</h4>
+                        <p class="price-old">RP 15.000</p>
+                        <p class="price-new">RP 13.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <!-- Ulangi 9 kali lagi (Total 12 item) untuk mengisi grid -->
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Gandum" alt="Roti Tawar Gandum">
+                        <h4>Roti Tawar Gandum</h4>
+                        <p class="price-old">RP 12.000</p>
+                        <p class="price-new">RP 10.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Cobelet" alt="Roti Cobelet">
+                        <h4>Roti Cobelet</h4>
+                        <p class="price-old">RP 15.000</p>
+                        <p class="price-new">RP 13.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Krim" alt="Roti Krim">
+                        <h4>Roti Krim</h4>
+                        <p class="price-old">RP 12.000</p>
+                        <p class="price-new">RP 10.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Isi+Keju" alt="Roti Isi Keju">
+                        <h4>Roti Isi Keju</h4>
+                        <p class="price-old">RP 15.000</p>
+                        <p class="price-new">RP 13.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Tawar" alt="Roti Tawar">
+                        <h4>Roti Tawar</h4>
+                        <p class="price-old">RP 12.000</p>
+                        <p class="price-new">RP 10.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Coklat" alt="Roti Manis Coklat">
+                        <h4>Roti Manis Coklat</h4>
+                        <p class="price-old">RP 15.000</p>
+                        <p class="price-new">RP 13.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Gandum" alt="Roti Tawar Gandum">
+                        <h4>Roti Tawar Gandum</h4>
+                        <p class="price-old">RP 12.000</p>
+                        <p class="price-new">RP 10.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Cobelet" alt="Roti Cobelet">
+                        <h4>Roti Cobelet</h4>
+                        <p class="price-old">RP 15.000</p>
+                        <p class="price-new">RP 13.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/100x100/fcece0/333?text=Roti+Krim" alt="Roti Krim">
+                        <h4>Roti Krim</h4>
+                        <p class="price-old">RP 12.000</p>
+                        <p class="price-new">RP 10.000</p>
+                        <button class="btn-pesan">Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: BAGIAN MENU DAN PRODUK BARU -->
+
+    </div>
+
+    <!-- Start: FOOTER BARU -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="salin.png" alt="Roti Beta Logo">
+            </div>
+            <div class="footer-menu">
+                <a href="#">Tentang kami</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Roti Kami</a>
+            </div>
+            <div class="footer-search">
+                <input type="text" placeholder="Cek Index Indonesia">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2025 Toko Roti Beta | Terdaftar pada Direktorat Jenderal Kekayaan Intelektual Republik Indonesia.
+        </div>
+    </footer>
+    <!-- End: FOOTER BARU -->
+
+</body>
+
+</html>

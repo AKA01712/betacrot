@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgba(243, 232, 204, 1);
+}
+
+.navbar {
+    background: linear-gradient(to right, #f3e8cc, #efe2c7);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Kontainer utama */
+.nav-container {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Logo */
+.logo img {
+    height: 69px;
+}
+
+/* Capsule menu */
+.menu {
+    background: linear-gradient(white, #fff7e3);
+    padding: 12px 40px;
+    border-radius: 40px;
+    display: flex;
+    gap: 50px;
+    flex-grow: 1;
+    justify-content: center;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Tombol login */
+.btn-login {
+    background: #c38300;
+    color: white;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-login:hover {
+    background: #a26f00;
+}
+
+.img-foto {
+   background-image: url(gambar\ 1.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 750px;
+
+    margin: 24px auto;          /* Membuat container di TENGAH */
+    border-radius: 16px;
+    padding: 0 170px;            /* Jarak kiri + kanan */
+    max-width: 1300px;          /* Batas lebar supaya tidak mepet layar */
+    position: relative;
+}
+
+.map-card {
+    width: 320px;
+    background: rgb(227, 227, 227);
+    position: absolute;
+    top: 115px;
+    right: 40px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: -59px;
+}
+
+.map-card h3 {
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+.map-card iframe {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.map-info {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* ------------------------- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 20px;
+    text-align: right;
+
+}
+
+.hero-text {
+    width: 40%;
+    padding-top: 40px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 55px;
+    margin-bottom: 10px;
+    color: #3a2a16;
+    margin-top: 276px;
+    margin-left: -20px;
+
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #4a3c2c;
+    margin-left: -20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f7c25c;
+    padding: 12px 25px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 49px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.gambar img {
+    margin-left: 250px;
+    background-color: blue;
+    padding-bottom: 50px;
+}
+
+.akhir {
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #4a3c2c;
+    margin-left: 100px;
+}
+
+.fort {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.header h2 {
+    margin-top: 50px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 49px;
+    /* Jarak antar kartu */
+    /* flex-wrap: wrap; Agar kartu bisa turun baris di layar kecil */
+    margin-top: 140px;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    /* Tinggi tetap untuk kartu */
+    border-radius: 20px;
+    /* Sudut membulat */
+    overflow: hidden;
+    /* Penting untuk gambar */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* Bayangan */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-image-box {
+    height: 70%;
+    /* Tinggi untuk area gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+    /* Latar belakang putih untuk area gambar jika perlu */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Agar gambar mengisi penuh dan tidak terdistorsi */
+    display: block;
+}
+
+.card-content {
+    height: 30%;
+    /* Tinggi untuk area teks */
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.card-1 {
+    background: linear-gradient(180deg, #f0c3f0 0%, #a864a8 100%);
+    padding: 10px;
+}
+
+.card-1 .card-content {
+    background-color: #a864a8;
+    background: linear-gradient(180deg, #d88dd8 0%, #a864a8 100%);
+}
+
+.card-2 {
+    background: linear-gradient(180deg, #99e0e8 0%, #50a0b0 100%);
+    padding: 10px;
+}
+
+.card-2 .card-content {
+    background-color: #50a0b0;
+    background: linear-gradient(180deg, #88c0c8 0%, #50a0b0 100%);
+}
+
+.card-3 {
+    background-color: #ed94b5;
+    padding: 10px;
+}
+
+.card-3 .image-text {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-4 {
+    background-color: #f3a277;
+    padding: 10px;
+}
+
+.card-4 .card-image-box {
+    height: 70%;
+    background: #ffffff;
+}
+
+/* New site-footer (detailed) */
+.site-footer {
+    background: #ea974e;
+    padding: 26px 0 12px 0;
+    color: #232323;
+    margin-top: 142px;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.footer-left {
+    display: flex;
+    gap: 18px;
+    flex: 1.6;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: white;
+    padding: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.muted {
+    color: rgba(46, 31, 20, 0.85);
+    margin: 6px 0 12px 0
+}
+
+.app-badges {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px
+}
+
+.app-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.app-badge.google {
+    background: #111
+}
+
+.app-badge.apple {
+    background: #0a0a0a
+}
+
+.app-badge strong {
+    display: block;
+    font-size: 11px
+}
+
+.search-box input {
+    width: 220px;
+    padding: 8px 12px;
+    border-radius: 18px;
+    border: 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.footer-links a {
+    color: #3b2416;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.footer-bottom {
+    width: 85%;
+    margin: 12px auto 0 auto;
+    padding: 12px 0 24px 0;
+    border-top:1px solid black;
+}
+
+.footer-bottom small {
+    color: #ffffff
+}
+
+.nav-icons {
+    /* Latar belakang untuk area ikon */
+    background: linear-gradient(to right, #deac70, #c38300);
+    padding: 8px 10px;
+    border-radius: 35px;
+    display: flex;
+    gap: 15px;
+    margin-right: 15px;
+    /* Jarak dari tepi kanan */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    /* Menyesuaikan posisi vertikal agar sejajar dengan menu */
+    margin-top: 10px;
+}
+
+.icon-wrapper {
+    background-color: #333;
+    /* Warna gelap untuk latar belakang ikon */
+    color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    /* Tambahan untuk tag <a> agar terlihat seperti DIV biasa */
+    text-decoration: none;
+    /* Menghilangkan garis bawah pada link */
+}
+
+.icon-wrapper:hover {
+    background-color: #111;
+}
+
+/* Styling Khusus untuk Ikon Keranjang (Tidak ada perubahan di sini) */
+.cart-icon {
+    position: relative;
+    background-color: #c38300;
+}

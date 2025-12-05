@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="notif.css"> 
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="salin.png" alt="Logo Roti Beta">
+            </div>
+
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="produk.html">Produk</a>
+                <a href="tentang.html">Tentang kami</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="notif.html" class="icon-wrapper active-notif-icon">
+                    <i class="fas fa-bell"></i>
+                </a>
+                
+                <a href="keranjang.html" class="icon-wrapper cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">1</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content-wrapper">
+        <div class="notification-section">
+            <h1 class="notif-title"><i class="fas fa-bell"></i> Notifikasi Anda</h1>
+            
+            <div class="notification-list">
+                
+                <div class="notif-item unread">
+                    <div class="notif-icon-status">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <div class="notif-content">
+                        <h4 class="notif-header">Pesanan Anda Berhasil Diproses!</h4>
+                        <p class="notif-message">Pesanan #RBT1234 sedang disiapkan oleh tim kami.</p>
+                        <span class="notif-time">Baru saja</span>
+                    </div>
+                    <i class="fas fa-chevron-right notif-arrow"></i>
+                </div>
+                
+                <div class="notif-item">
+                    <div class="notif-icon-status promo">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="notif-content">
+                        <h4 class="notif-header">Promo Spesial Awal Bulan!</h4>
+                        <p class="notif-message">Dapatkan diskon 20% untuk semua Roti Tawar Gandum hingga akhir pekan.</p>
+                        <span class="notif-time">2 hari yang lalu</span>
+                    </div>
+                    <i class="fas fa-chevron-right notif-arrow"></i>
+                </div>
+
+                <div class="notif-item">
+                    <div class="notif-icon-status info">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="notif-content">
+                        <h4 class="notif-header">Terima kasih atas ulasan Anda!</h4>
+                        <p class="notif-message">Kami sangat menghargai masukan Anda untuk Roti Cokelat Spesial.</p>
+                        <span class="notif-time">1 minggu yang lalu</span>
+                    </div>
+                    <i class="fas fa-chevron-right notif-arrow"></i>
+                </div>
+                
+                <button class="btn-mark-all-read">Tandai Semua Sudah Dibaca</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="salin.png" alt="Roti Beta Logo">
+            </div>
+            <div class="footer-menu">
+                <a href="#">Tentang kami</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Roti Kami</a>
+            </div>
+            <div class="footer-search">
+                <input type="text" placeholder="Cek Index Indonesia">
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2025 Toko Roti Beta | Terdaftar pada Direktorat Jenderal Kekayaan Intelektual Republik Indonesia.
+        </div>
+    </footer>
+</body>
+</html>
